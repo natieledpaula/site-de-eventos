@@ -1,51 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NG Tech</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/header.css">
+    <link rel="stylesheet" href="/src/styles/home.css">
+    <link rel="stylesheet" href="/src/styles/menu.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>GDG Londrina</title>
+
 </head>
 <body>
+    <!-- Parte do header(cabeçalho) -->
     <header>
-        <!-- logo esta branca -->
-    <nav class="cabecalho">
-        <img id="logo" src="/Imagem/Logo_loja_de_semijoia_simples_e_circular_minimalista_verde-escuro-removebg-preview.png" alt="Logo NG">
+        <nav id="navbar">
+            <img src="/src/Imagem/5159265559957843732-Photoroom.png" alt="GDG Logo">
+            <ul id="nav_list">
+                <li class="nav_item active">
+                    <a href="#home">
+                        Início
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#agenda">
+                        Programação
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#palestra">
+                        Palestrantes
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#localizacao">
+                        Localização
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#inscricao">
+                        Inscrição
+                    </a>
+                </li>
+            </ul>
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
-    
-    </nav>
-    
-        <section class="registro">
-        <div class="anuncio">
-        <h1>NG Tech</h1>
-        <p>Venha para o evento mais Tech de Londrina e Região</p>
-        <p>Inscreva-se agora para participar e não perder nenhuma novidade.
-            Contatamos com sua presença no nosso time</p>
-            <span>
-                23/04/2025
-                19 horas
-                Online (ao vivo)
-            </span></div>
-        <div class="cadastro">
-            <form>
-                <h2>Evento Tech</h2>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required>
-                <button type="submit">Quero participar</button>
-                <p>Ao se inscrever, você concorda em receber comunicações sobre o evento e ofertas relacionadas.</p>
-            </form>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav_item">
+                    <a href="#home">
+                        Início
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#agenda">
+                        Programação
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#palestra">
+                        Palestrantes
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#localizacao">
+                        Localização
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#inscricao">
+                        Inscrição
+                    </a>
+                </li>
+            </ul>
         </div>
-        </section>
     </header>
-    <main>
-    </main>
-    <div class="rodape">
-        <img src="/Imagem/Logo_loja_de_semijoia_simples_e_circular_minimalista_verde-escuro-removebg-preview.png" alt="Logo NG">
-        <p>&copy; 2025 NG Tech. Todos os direitos reservados.</p>
-    </div>
+
+    <script src="/src/javascript/script.js"></script>
 </body>
 </html>
