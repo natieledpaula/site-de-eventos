@@ -18,13 +18,13 @@ header {
 
 .nav_item a {
     text-decoration: none;
-    color: #1d1d1dad;
+    color: white;
     font-weight: 600;
 }
 
 .nav_item.active a {
-    color: #1d1d1d;
-    border-bottom: 3px solid #ffe100;
+    color: white;
+    border-bottom: 3px solid red;
 }
 
 #mobile_btn {
@@ -33,39 +33,4 @@ header {
 
 #mobile_menu {
     display: none;
-}
-
-/* Parte da responsividade */
-
-@media screen and (max-width: 768px) {
-    #nav_list,
-    #navbar .btn_default {
-        display: none;
-    }
-
-    #mobile_btn {
-        display: block;
-        border: none;
-        background-color: transparent;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-
-    #mobile_menu.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #mobile_nav_list {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        margin: 12px 0px;
-    }
-
-    #mobile_nav_list .nav_item {
-        list-style: none;
-        text-align: center;
-    } 
 }
