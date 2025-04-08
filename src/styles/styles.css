@@ -13,7 +13,7 @@ body {
     background-color: white;
 }
 
-main {
+section {
     padding: 28px 8%;
 }
 
@@ -32,11 +32,6 @@ main {
 
 .btn_default:hover {
     background-color: #f8d477;
-}
-
-.social_media_buttons {
-    display: flex;
-    gap: 18px;
 }
 
 .section_title {
