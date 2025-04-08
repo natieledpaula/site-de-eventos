@@ -10,6 +10,12 @@ header {
     justify-content: space-between;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 #nav_list {
     display: flex;
     list-style: none;
@@ -18,12 +24,12 @@ header {
 
 .nav_item a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: 600;
 }
 
 .nav_item.active a {
-    color: white;
+    color: black;
     border-bottom: 3px solid red;
 }
 

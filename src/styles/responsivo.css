@@ -1,7 +1,7 @@
 /* Parte da responsividade */
 
 /* Parte do cabeçalho */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1170px) {
     #nav_list,
     #navbar .btn_default {
         display: none;
