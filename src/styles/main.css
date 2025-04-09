@@ -48,6 +48,8 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    margin-left: 100%;
+    margin-top: -20%;
     gap: 12px;
    
 }
