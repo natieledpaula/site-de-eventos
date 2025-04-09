@@ -1,105 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/src/styles/styles.css">
-    <link rel="stylesheet" href="/src/styles/header.css">
-    <link rel="stylesheet" href="/src/styles/responsivo.css">
-    <link rel="stylesheet" href="/src/styles/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  
+    <link rel="stylesheet" href="/src/styles/styles.css" />
+    <link rel="stylesheet" href="/src/styles/header.css" />
+    <link rel="stylesheet" href="/src/styles/responsivo.css" />
+    <link rel="stylesheet" href="/src/styles/main.css" />  
+    <link rel="stylesheet" href="src/styles/background.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>GDG Londrina</title>
-
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Parte do background -->
+    <div class="interactive-background" id="interactive-bg">
+        <div class="gradient-follow" id="gradient"></div>
+        <div class="grid"></div>
+        <div class="particles-container" id="particles"></div>
+        <div class="orb orb1" id="orb1"></div>
+        <div class="orb orb2" id="orb2"></div>
+        <div class="orb orb3" id="orb3"></div>
+        <div class="waves">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+        </div>
+    </div>
     <!-- Parte do header(cabeçalho) -->
     <header>
-        <nav id="navbar">
-            <div class="logo">
-                <img src="/src/Imagem/5159265559957843732-Photoroom.png" id="logo_img" alt="GDG Logo">
-                <h1>GDG Londrina</h1>
-            </div>
-            <ul id="nav_list">
-                <li class="nav_item active">
-                    <a href="#home">
-                        Início
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#agenda">
-                        Programação
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#palestra">
-                        Palestrantes
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#localizacao">
-                        Localização
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#inscricao">
-                        Inscrição
-                    </a>
-                </li>
-            </ul>
-            <button id="mobile_btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
-
-        <div id="mobile_menu">
-            <ul id="mobile_nav_list">
-                <li class="nav_item">
-                    <a href="#home">
-                        Início
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#agenda">
-                        Programação
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#palestra">
-                        Palestrantes
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#localizacao">
-                        Localização
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#inscricao">
-                        Inscrição
-                    </a>
-                </li>
-            </ul>
+      <nav id="navbar">
+        <div class="logo">
+          <img
+            src="/src/Imagem/5159265559957843732-Photoroom.png"
+            id="logo_img"
+            alt="GDG Logo"
+          />
+          <h1>GDG Londrina</h1>
         </div>
+        <ul id="nav_list">
+          <li class="nav_item active">
+            <a href="#home"> Início </a>
+          </li>
+          <li class="nav_item">
+            <a href="#agenda"> Programação </a>
+          </li>
+          <li class="nav_item">
+            <a href="#palestra"> Palestrantes </a>
+          </li>
+          <li class="nav_item">
+            <a href="#localizacao"> Localização </a>
+          </li>
+          <li class="nav_item">
+            <a href="#inscricao"> Inscrição </a>
+          </li>
+        </ul>
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <li class="nav_item">
+            <a href="#home"> Início </a>
+          </li>
+          <li class="nav_item">
+            <a href="#agenda"> Programação </a>
+          </li>
+          <li class="nav_item">
+            <a href="#palestra"> Palestrantes </a>
+          </li>
+          <li class="nav_item">
+            <a href="#localizacao"> Localização </a>
+          </li>
+          <li class="nav_item">
+            <a href="#inscricao"> Inscrição </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!-- Parte do inicio -->
     <main id="content">
-        <section id="home">
-            <div class="shape"></div>
-            <div id="inicio">
-                <h1 class="title">GDG Londrina - <strong>Evento tech 2025</strong></h1>
-                <p class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-            </div>
-            <div id="banner">
-                <img src="/src/Imagem/5159265559957843732-Photoroom.png" id="banner_img" alt="Banner">
-            </div>
-        </section>
+      <section id="home">
+        <div class="shape"></div>
+        <div id="inicio">
+          <h1 class="title">
+            GDG Londrina - <strong>Evento tech 2025</strong>
+          </h1>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>   
+          <div>
+            
+          </div>
+
+          </div> 
+          <div id="btn-container">
+            <button id="btn">
+                Inscreva-se
+               </button>
+      </section>
+      
+       
+      
     </main>
 
+   
     <script src="/src/javascript/script.js"></script>
-</body>
+  </body>
 </html>

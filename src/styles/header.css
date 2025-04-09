@@ -1,7 +1,9 @@
-header {
+/* header {
     width: 100%;
     padding: 0px 8%;
-}
+    background: -moz-linear-gradient(#444); }*/
+
+
 
 #navbar {
     width: 100%;
@@ -29,12 +31,12 @@ header {
 
 .nav_item a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 600;
 }
 
 .nav_item.active a {
-    color: black;
+    color: rgb(0, 148, 20);
     border-bottom: 3px solid red;
 }
 
