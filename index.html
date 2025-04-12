@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/styles/responsivo.css" />
     <link rel="stylesheet" href="/styles/main.css" />  
     <link rel="stylesheet" href="/styles/background.css">
+    <link rel="stylesheet" href="styles/palestrantes.css">
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -103,17 +104,93 @@
             GDG Londrina - <strong>Evento tech 2025</strong>
           </h1>
           <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          
           </p>   
           <div>
             <div id="btn-container">
+              <div id="">
+                <h3>Descrição </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odit natus eum perspiciatis ipsa officiis eligendi aliquid odio iste. Inventore vero placeat quidem consequuntur. Eveniet accusamus dolorum nobis maxime tempora?</p>
+              </div>
             <button id="btn">
                 Inscreva-se
               </button>
           </div>
 
           </div> 
-        
+      </section>
+      
+      <section id="agenda">
+        <div class="agenda-palestra">
+    
+            <h2>Eventos</h2>
+            <div class="eventos">
+              <div class="evento">
+                <h3>Evento 1</h3>
+                <p>Descrição do evento 1</p>
+                <span class="data">12/05/2025</span>
+                <span class="horario">Horário: 15:00</span>
+                <button id="btn">Saiba Mais</button>
+              </div>
+              <div class="evento">
+                <h3>Evento 2</h3>
+                <p>Descrição do evento 2</p>
+                <span class="data">14/05/2025</span>
+                <span class="horario" >Horário 18:00</span>
+                <button id="btn">Saiba Mais</button>
+
+              </div>
+              <div class="evento">
+                <h3>Evento 3</h3>
+                <p>Descrição do evento 3</p>
+                <span class="data">18/05/2025</span>
+                <span class="horario">Horário: 20:00</span>
+                <button id="btn">Saiba Mais</button>
+
+              </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="palestra">
+        <div class="lista">
+          <div class="item active">
+            <div class="palestrante-img">
+              <img src="img1.jpg" alt="Palestrante 1">
+            </div>
+            <div class="content">
+              <div class="car-information">Info do carro ou palestra</div>
+              <h2>Título da palestra</h2>
+              <div class="description">Descrição breve da palestra e do palestrante.</div>
+              <button class="information">Saiba mais</button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="palestrante-img">
+              <img src="img2.jpg" alt="Palestrante 2">
+            </div>
+            <div class="content">
+              <div class="car-information">Outro conteúdo</div>
+              <h2>Outro título</h2>
+              <div class="description">Outra descrição para este slide.</div>
+              <button class="information">Saiba mais</button>
+            </div>
+          </div>
+      
+          <!-- MOVA AS SETAS PRA CÁ -->
+          <div class="arrows">
+            <button id="prev"><img src="Imagem/flecha.png" alt="Anterior"></button>
+            <button id="next"><img src="Imagem/flecha.png" alt="Próximo"></button>
+          </div>
+        </div>
+      
+      </section>
+
+      <section id="localizacao">
+        <h2>Localização</h2>
+        <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.3325707007243!2d-51.14333442485062!3d-23.303689378977754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb437a3d1d44af%3A0x9c9f46adfc62d1eb!2sUniCesumar%20-%20Londrina!5e0!3m2!1spt-BR!2sbr!4v1744489398450!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
       </section>
       
       
@@ -122,5 +199,6 @@
 
     <script src="/javascript/script.js"></script>
     <script src="/javascript/background.js"></script>
+    <script src="/javascript/slides.js"></script>
   </body>
 </html>
