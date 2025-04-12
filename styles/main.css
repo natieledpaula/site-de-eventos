@@ -23,11 +23,11 @@
 
 #inicio .title {
     font-size: 3.5rem;
-    color: rgb(255, 234, 0);
+    color: #00c8ff66;
 }
 
 #inicio .title strong {
-    color: red;
+    color: #5352ed;
 }
 
 #inicio .description {
@@ -51,7 +51,6 @@
     margin-left: 100%;
     margin-top: -20%;
     gap: 12px;
-   
 }
 
 #btn {

@@ -1,9 +1,9 @@
-/* header {
+header {
     width: 100%;
     padding: 0px 8%;
-    background: -moz-linear-gradient(#444); }*/
-
-
+    background: -moz-linear-gradient(#444); 
+    position: fixed;
+}
 
 #navbar {
     width: 100%;
@@ -36,8 +36,8 @@
 }
 
 .nav_item.active a {
-    color: rgb(0, 148, 20);
-    border-bottom: 3px solid red;
+    color: #00c8ff66;
+    border-bottom: 3px solid #5352ed;
 }
 
 #mobile_btn {
