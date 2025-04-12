@@ -2,6 +2,8 @@ header {
     width: 100%;
     padding: 0px 8%;
     background: -moz-linear-gradient(#444); 
+    background: -webkit-linear-gradient(#444);
+    background: linear-gradient(#444);
     position: fixed;
 }
 
