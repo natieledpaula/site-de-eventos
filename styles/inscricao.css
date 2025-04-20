@@ -1,0 +1,98 @@
+.form-container,
+.lista-container,
+.confirmacao-container {
+  background-color: rgba(13, 13, 13, 0.95); /* preto quase puro com opacidade */
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00f0ff, 0 0 30px #9f00ff; /* ciano + roxo neon */
+  width: 350px;
+  color: #e6faff; /* branco suave */
+}
+
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 15px 30px;
+}
+
+.form-container h2,
+.confirmacao-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00f0ff;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #9f00ff;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #00f0ff;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: #e6faff;
+}
+
+.form-group input::placeholder {
+  color: #bbb;
+}
+
+.checkbox-group input {
+  margin-right: 10px;
+}
+
+.form-container button {
+  width: 100%;
+  margin: 15px 0;
+  padding: 12px;
+  background: linear-gradient(45deg, #00f0ff, #9f00ff);
+  border: none;
+  color: #0d0d0d;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.form-container button:hover {
+  background: linear-gradient(45deg, #00b8cc, #7a00cc);
+  box-shadow: 0 0 10px #00f0ff, 0 0 20px #9f00ff;
+}
+
+.dado {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-left: 4px solid #00f0ff;
+  border-radius: 8px;
+}
+
+.dado p {
+  margin: 5px 0;
+  color: #e6faff;
+}
+
+.voltar,
+.confirmacao-container a {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #00f0ff;
+  font-weight: bold;
+}
+
+.voltar:hover,
+.confirmacao-container a:hover {
+  color: #9f00ff;
+  text-shadow: 0 0 5px #9f00ff;
+}

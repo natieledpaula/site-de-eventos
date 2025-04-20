@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/main.css" />  
     <link rel="stylesheet" href="styles/background.css">
     <link rel="stylesheet" href="styles/palestrantes.css">
+    <link rel="stylesheet" href="styles/inscricao.css">
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -187,6 +188,41 @@
         <div class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.3325707007243!2d-51.14333442485062!3d-23.303689378977754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb437a3d1d44af%3A0x9c9f46adfc62d1eb!2sUniCesumar%20-%20Londrina!5e0!3m2!1spt-BR!2sbr!4v1744489398450!5m2!1spt-BR!2sbr" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
       </section>
+
+      <section class="form-container" id="inscricao">
+        <h2>Inscrição</h2>
+  
+        <form action="" id="formulario">
+          <div class="form-group">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" placeholder="Digite seu nome completo" />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu e-mail"
+            />
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              placeholder="(00)00000-0000"
+            />
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" name="termos" id="termos" />
+            <label for="termos">Aceito os termos</label>
+          </div>
+          <button type="submit">Confirmar</button>
+        </form>
+      </section>
+
     </main>
 
     <script src="javascript/script.js"></script>
