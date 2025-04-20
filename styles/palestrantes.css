@@ -1,208 +1,216 @@
+:root {
+  --primary: #00c8ff;
+  --secondary: #5352ed;
+  --accent: #ff2e63;
+  --dark: #0a0a24;
+  --light: #f1f2f6;
+}
+
 /* Reset e configurações globais */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#palestra{
-    margin-top: 10%;
+#palestra {
+  margin-top: 10%;
 }
 
-  /* Adaptação: classe .lista */
-  #palestra .lista {
-    
-    width: 70vw;
-    height: 100%;
-    margin: auto;
-    position: relative;
-  }
-  
-  /* .item e .item.active */
-  #palestra .lista .item {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transform: translateX(100vw);
-    transition: 0.5s;
-  }
-  
-  #palestra .lista .item.active {
-    transform: translateX(0);
-    opacity: 1;
-    transition: 0.5s;
-  }
-  
-  /* Adaptação: .palestrante-img e .car-img */
-  #palestra .lista .item .palestrante-img,
-  #palestra .lista .item .car-img {
-    position: absolute;
-    top: 30%;
-    transform: translateY(-50%);
-    width: 70%;
-  }
-  
-  #palestra .lista .item .palestrante-img img,
-  #palestra .lista .item .car-img img {
-    width: 100%;
-    transform: rotate(0deg);
-    transition: 0.5s;
-    transition-delay: 0.3s;
-  }
-  
-  #palestra .lista .item.active .palestrante-img img,
-  #palestra .lista .item.active .car-img img {
-    transform: rotate(-20deg);
-  }
-  
-  /* Conteúdo textual */
-  #palestra .lista .item .content {
-    position: absolute;
-    bottom: 10%;
-    right: 100px;
-    width: 70%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    gap: 20px;
-  }
-  
-  /* Animações */
-  #palestra .lista .item .content .car-information,
-  #palestra .lista .item .content h2,
-  #palestra .lista .item .content .description,
-  #palestra .lista .item .content .information {
-    transform: translateX(200px);
-    transition: 0.7s;
-    transition-delay: 0.3s;
-  }
-  
-  #palestra .lista .item.active .content .car-information {
-    transform: translateX(0);
-  }
-  
-  #palestra .lista .item.active .content h2 {
-    transform: translateX(0);
-    transition-delay: 0.5s;
-  }
-  
-  #palestra .lista .item.active .content .description {
-    transform: translateX(0);
-    transition-delay: 0.9s;
-  }
-  
-  #palestra .lista .item.active .content .information {
-    transform: translateX(0);
-    transition-delay: 1.2s;
-  }
-  
-  #palestra .lista .item .content h2 {
-    font-size: 2em;
-    line-height: 1em;
-  }
-  
-  #palestra .lista .item .content .description {
-    color: gray;
-    font-size: 12px;
-    text-align: right;
-    max-width: 400px;
-  }
-  
-  #palestra .lista .item .content .information {
-    border-radius: 30px;
-    height: 35px;
-    width: 125px;
-    text-transform: uppercase;
-    border: 2px solid white;
-    background-color: yellowgreen;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  /* Linha branca */
-  #palestra .lista::before {
-    content: "";
-    position: absolute;
-    height: 200px;
-    width: 100%;
-    top: 30%;
-    border-top: 1px solid white;
-  }
-  
-  /* Arrows */
-  #palestra .arrows {
-    width: 70vw;
-    position: absolute;
-    top: 29%;
-    left: 50%;
-    transform: translate(-50%, -25%);
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  #palestra .arrows button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-  }
-  
-  #palestra .arrows button:nth-child(1) img {
-    scale: -1;
-  }
-  
-  #palestra .arrows img {
-    width: 30px;
-    margin-top: 4px;
-  }
-  
-  #palestra .arrows img:hover {
-    background-color: rgb(255, 0, 162);
-    border-radius: 50%;
-  }
-  
-  #palestra .indicator {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  #palestra .indicator .number {
-    font-size: 3em;
-    color: #000;
-  }
-  
-  #palestra .indicator ul {
-    display: flex;
-    gap: 10px;
-  }
-  
-  #palestra .indicator ul li {
-    width: 25px;
-    height: 5px;
-    background-color: violet;
-    transition: 0.5s;
-  }
-  
-  #palestra .indicator ul li.active {
-    background-color: black;
-  }
-  
-  
-  /* Classe utilitária */
-  .active {
-    transform: translateX(0);
-    transition: 0.5s;
-    opacity: 1;
-  }
-  
+/* Adaptação: classe .lista */
+#palestra .lista {
+  width: 70vw;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+
+/* .item e .item.active */
+#palestra .lista .item {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateX(100vw);
+  transition: 0.5s;
+}
+
+#palestra .lista .item.active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* Adaptação: .palestrante-img e .car-img */
+#palestra .lista .item .palestrante-img,
+#palestra .lista .item .car-img {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 70%;
+}
+
+#palestra .lista .item .palestrante-img img,
+#palestra .lista .item .car-img img {
+  width: 100%;
+  transform: rotate(0deg);
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+
+#palestra .lista .item.active .palestrante-img img,
+#palestra .lista .item.active .car-img img {
+  transform: rotate(-20deg);
+}
+
+/* Conteúdo textual */
+#palestra .lista .item .content {
+  position: absolute;
+  bottom: 10%;
+  right: 100px;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
+}
+
+/* Animações */
+#palestra .lista .item .content .car-information,
+#palestra .lista .item .content h2,
+#palestra .lista .item .content .description,
+#palestra .lista .item .content .information {
+  transform: translateX(200px);
+  transition: 0.7s;
+  transition-delay: 0.3s;
+}
+
+#palestra .lista .item.active .content .car-information {
+  transform: translateX(0);
+}
+
+#palestra .lista .item.active .content h2 {
+  transform: translateX(0);
+  transition-delay: 0.5s;
+}
+
+#palestra .lista .item.active .content .description {
+  transform: translateX(0);
+  transition-delay: 0.9s;
+}
+
+#palestra .lista .item.active .content .information {
+  transform: translateX(0);
+  transition-delay: 1.2s;
+}
+
+#palestra .lista .item .content h2 {
+  font-size: 2em;
+  line-height: 1em;
+  color: var(--light);
+}
+
+#palestra .lista .item .content .description {
+  color: var(--light);
+  font-size: 12px;
+  text-align: right;
+  max-width: 400px;
+}
+
+#palestra .lista .item .content .information {
+  border-radius: 30px;
+  height: 35px;
+  width: 125px;
+  text-transform: uppercase;
+  border: 2px solid var(--light);
+  background-color: var(--secondary);
+  color: var(--light);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Linha branca */
+#palestra .lista::before {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  top: 30%;
+  border-top: 1px solid var(--light);
+}
+
+/* Arrows */
+#palestra .arrows {
+  width: 70vw;
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  display: flex;
+  justify-content: space-between;
+}
+
+#palestra .arrows button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: var(--light);
+}
+
+#palestra .arrows button:nth-child(1) img {
+  scale: -1;
+}
+
+#palestra .arrows img {
+  width: 30px;
+  margin-top: 4px;
+}
+
+#palestra .arrows img:hover {
+  background-color: var(--accent);
+  border-radius: 50%;
+}
+
+#palestra .indicator {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#palestra .indicator .number {
+  font-size: 3em;
+  color: var(--dark);
+}
+
+#palestra .indicator ul {
+  display: flex;
+  gap: 10px;
+}
+
+#palestra .indicator ul li {
+  width: 25px;
+  height: 5px;
+  background-color: var(--primary);
+  transition: 0.5s;
+}
+
+#palestra .indicator ul li.active {
+  background-color: var(--dark);
+}
+
+/* Classe utilitária */
+.active {
+  transform: translateX(0);
+  transition: 0.5s;
+  opacity: 1;
+}
