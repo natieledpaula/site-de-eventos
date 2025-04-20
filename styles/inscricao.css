@@ -9,11 +9,41 @@
   color: #e6faff; /* branco suave */
 }
 
+.titulo-inscricao {
+  text-align: center;
+  color: #00f0ff;
+ 
+}
+
+.titulo-inscricao h1 {
+  margin-bottom: 20px;
+}
+
+.titulo-inscricao p {   
+  margin-bottom: 20px;
+}
+
+
+
 .form-container {
   width: 50%;
   margin: 0 auto;
   margin-top: 50px;
+  margin-bottom: 80px;
   padding: 15px 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.checkbox-group {
+  margin-bottom: 15px;  
+}
+
+.form-group input,
+.checkbox-group input {
+  margin-right: 10px;
 }
 
 .form-container h2,
