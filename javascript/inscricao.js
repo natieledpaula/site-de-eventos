@@ -24,7 +24,7 @@ function validarFormulario(event) {
   localStorage.setItem("cadastroEvento", JSON.stringify(dados));
 
   alert("Cadastro realizado com sucesso!");
-  window.location.href = "confirmarCadastro.html";
+  window.location.href = "inscricaoConfirmada.html";
 
   document.querySelector("form").reset();
 
