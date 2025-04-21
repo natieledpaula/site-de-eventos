@@ -11,6 +11,11 @@ body {
     line-height: 1.6;
 }
 
+#img-100px{
+    width: 100px;   
+    
+}
+
 .header {
     background: linear-gradient(135deg, #5352ed 0%, #333 100%);
     color: #5352ed;
@@ -22,7 +27,7 @@ body {
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 1.5rem;
     display: flex;
@@ -31,7 +36,13 @@ body {
     height: 70px;
 }
 
+
+
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #eee;
     font-size: 24px;
 }
 
@@ -95,3 +106,4 @@ body {
 .nav-menu a:hover::after {
     width: 70%;
 }
+
