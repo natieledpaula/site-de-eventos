@@ -6,6 +6,10 @@
     --light: #f1f2f6;
 }
 
+a {
+    text-decoration: none;
+}
+
 #home {
     display: flex;
     flex: auto;
