@@ -1,42 +1,38 @@
-$(document).ready(function () {
-  $("#mobile_btn").on("click", function () {
-    $("#mobile_menu").toggleClass("active");
-    $("#mobile_btn").find("i").toggleClass("fa-x");
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  const overlay = document.querySelector('.overlay');
+  
+  navToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('active');
+      navToggle.classList.toggle('active');
+      overlay.classList.toggle('active');
+      document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
   });
-
-  const sections = $("section");
-  const navItems = $(".nav_item");
-
-  $(window).on("scroll", function () {
-    const header = $("header");
-    const scrollPosition = $(window).scrollTop() - header.outerHeight();
-
-    let activeSectionIndex = 0;
-
-    if (scrollPosition <= 0) {
-      header.css("box-shadow", "none");
-    } else {
-      header.css("box-shadow", "0 2px 4px rgba(0, 0, 0, 0.1)");
-    }
-
-    sections.each(function (i) {
-      const section = $(this);
-      const sectionTop = section.offset().top - header.outerHeight();
-      const sectionBottom = sectionTop + section.outerHeight();
-
-      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-        activeSectionIndex = i;
-        return false;
+  
+  overlay.addEventListener('click', function() {
+      navMenu.classList.remove('active');
+      navToggle.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+  });
+  
+  // Fechar o menu ao redimensionar a janela para tamanho grande
+  window.addEventListener('resize', function() {
+      if (window.innerWidth > 768) {
+          navMenu.classList.remove('active');
+          navToggle.classList.remove('active');
+          overlay.classList.remove('active');
+          document.body.style.overflow = '';
       }
-    });
-
-    navItems.removeClass("active");
-    $(navItems[activeSectionIndex]).addClass("active");
   });
+});
 
-  ScrollReveal().reveal("#cta", {
-    origin: "left",
-    duration: 2000,
-    distance: "20%",
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  
+  navToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('active');
   });
 });

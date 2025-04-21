@@ -1,37 +1,32 @@
 /* Parte da responsividade */
 
 /* Parte do cabeçalho */
-@media screen and (max-width: 1170px) {
-    #nav_list,
-    #navbar .btn_default {
+/* Para telas maiores que 768px */
+@media (min-width: 768px) {
+    .nav-toggle {
         display: none;
     }
-
-    #mobile_btn {
-        display: block;
-        border: none;
+    
+    .nav-menu {
+        position: static;
+        max-height: none;
         background-color: transparent;
-        font-size: 1.5rem;
-        cursor: pointer;
+        width: auto;
+        overflow: visible;
     }
-
-    #mobile_menu.active {
+    
+    .nav-menu ul {
         display: flex;
-        flex-direction: column;
-        align-items: center;
     }
-
-    #mobile_nav_list {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        margin: 12px 0px;
+    
+    .nav-menu li {
+        border-bottom: none;
+        margin-left: 1rem;
     }
-
-    #mobile_nav_list .nav_item {
-        list-style: none;
-        text-align: center;
-    } 
+    
+    .nav-menu a {
+        padding: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 1170px) {
@@ -46,8 +41,6 @@
     #banner, #banner img, #home .shape {
         display: none;
     }
-
-  
 
     #inicio {
         width: 100%;
