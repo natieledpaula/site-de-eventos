@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="styles/responsivo.css" />
     <link rel="stylesheet" href="styles/main.css" />  
     <link rel="stylesheet" href="styles/background.css">
-    <link rel="stylesheet" href="styles/palestrantes.css">
+    <!-- <link rel="stylesheet" href="styles/palestrantes.css"> -->
+     <link rel="stylesheet" href="styles/palestra.css">
     <link rel="stylesheet" href="styles/inscricao.css">
 
     <script
@@ -56,11 +57,11 @@
         <button class="nav-toggle" aria-label="Alternar navegação">☰</button>
           <nav class="nav-menu">
               <ul>
-                  <li><a href="#inicio">Início</a></li>
+                  <li><a href="#inicio" class="scroll-link">Início</a></li>
                   <li><a href="#agenda">Programação</a></li>
-                  <li><a href="#palestra">Palestrantes</a></li>
-                  <li><a href="#localizacao">Localização</a></li>
-                  <li><a href="#inscricao">Inscrição</a></li>
+                  <li><a href="#palestra" class="scroll-link">Palestrantes</a></li>
+                  <li><a href="#localizacao" class="scroll-link">Localização</a></li>
+                  <li><a href="#inscricao" class="scroll-link">Inscrição</a></li>
               </ul>
           </nav>
       </div>
@@ -121,10 +122,44 @@
       </section>
 
       <section id="palestra">
+        <div class="palestrantes">
+          <h2>Palestrantes</h2>
+          
+          <div class="slider-container">
+            <button class="slide-btn prev">&#10094;</button>
+      
+            <div class="palestrantes-container">
+              <div class="palestrante">
+                <img src="Imagem/pessoa1.png" alt="Palestrante 1">
+                <h3>Palestrante 1</h3>
+                <p>Descrição do palestrante 1</p>
+                <button>Saiba Mais</button>
+              </div>
+              <div class="palestrante">
+                <img src="Imagem/pessoa2.png" alt="Palestrante 2">
+                <h3>Palestrante 2</h3>
+                <p>Descrição do palestrante 2</p>
+                <button>Saiba Mais</button>
+              </div>
+              <div class="palestrante">
+                <img src="Imagem/pessoa3.png" alt="Palestrante 3">
+                <h3>Palestrante 3</h3>
+                <p>Descrição do palestrante 3</p>
+                <button>Saiba Mais</button>
+              </div>
+            </div>
+      
+            <button class="slide-btn next">&#10095;</button>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- <section id="palestra">
         <div class="lista">
           <div class="item active">
             <div class="palestrante-img">
-              <img src="img1.jpg" alt="Palestrante 1">
+              <img src="Imagem/pessoa1.png" alt="Palestrante 1" id="img-350px">
             </div>
             <div class="content">
               <div class="car-information">Info do carro ou palestra</div>
@@ -135,7 +170,7 @@
           </div>
           <div class="item">
             <div class="palestrante-img">
-              <img src="img2.jpg" alt="Palestrante 2">
+              <img src="Imagem/pessoa2.png" alt="Palestrante 2" id="img-350px">
             </div>
             <div class="content">
               <div class="car-information">Outro conteúdo</div>
@@ -145,13 +180,13 @@
             </div>
           </div>
       
-          <!-- MOVA AS SETAS PRA CÁ -->
+         
           <div class="arrows">
             <button id="prev"><img src="Imagem/flecha.png" alt="Anterior"></button>
             <button id="next"><img src="Imagem/flecha.png" alt="Próximo"></button>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section id="localizacao">
         <h2>Localização</h2>

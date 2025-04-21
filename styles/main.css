@@ -9,7 +9,7 @@
 #home {
     display: flex;
     flex: auto;
-    min-height: calc(100vh - 91px);
+    min-height: calc(100vh - 150px);
     position: relative;
 }
 

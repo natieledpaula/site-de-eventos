@@ -1,0 +1,68 @@
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+.palestrantes h2 {
+    text-align: center;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+.palestrante button {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .palestrante button:hover {
+    background-color: var(--secondary);
+  }
+
+  .palestrantes-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .palestrante {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .palestrante img {
+    max-width: 500px;
+    border-radius: 50%;
+  }
+  
+  .slide-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .slide-btn.prev {
+    position: absolute;
+    left: 0;
+  }
+  
+  .slide-btn.next {
+    position: absolute;
+    right: 0;
+  }
+  

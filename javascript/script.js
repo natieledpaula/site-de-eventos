@@ -38,3 +38,26 @@ document.addEventListener("DOMContentLoaded", function () {
     console.warn("Um ou mais elementos do menu não foram encontrados.");
   }
 });
+
+// Corrige o scroll ao clicar nos links do menu
+document.querySelectorAll('.scroll-link').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    const headerOffset = 70; // altura do header fixo (ajuste conforme seu header)
+    const sectionPosition = targetSection.offsetTop - headerOffset;
+
+    window.scrollTo({
+      top: sectionPosition,
+      behavior: 'smooth'
+    });
+
+    // Fecha o menu mobile ao clicar
+    document.querySelector(".nav-menu").classList.remove("active");
+    document.querySelector(".nav-toggle").classList.remove("active");
+    document.querySelector(".overlay").classList.remove("active");
+    document.body.style.overflow = "";
+  });
+});

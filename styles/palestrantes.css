@@ -17,6 +17,7 @@
   margin-top: 10%;
 }
 
+
 /* Adaptação: classe .lista */
 #palestra .lista {
   width: 70vw;
@@ -43,6 +44,7 @@
 /* Adaptação: .palestrante-img e .car-img */
 #palestra .lista .item .palestrante-img,
 #palestra .lista .item .car-img {
+
   position: absolute;
   top: 30%;
   transform: translateY(-50%);
@@ -51,7 +53,8 @@
 
 #palestra .lista .item .palestrante-img img,
 #palestra .lista .item .car-img img {
-  width: 100%;
+  width: 70%;
+  margin: auto;
   transform: rotate(0deg);
   transition: 0.5s;
   transition-delay: 0.3s;
