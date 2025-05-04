@@ -10,15 +10,110 @@ a {
     text-decoration: none;
 }
 
+/* Estilos para a seção principal (header com título e descrição) */
 #home {
     display: flex;
-    flex: auto;
-    min-height: calc(100vh - 150px);
+    flex-wrap: wrap;
+    min-height: 60vh; /* Altura mínima para comportar o conteúdo */
     position: relative;
+    padding: 40px 20px;
+    align-items: center;
 }
 
+/* Container para o título "Evento tech 2025" */
+.titulo-evento {
+    width: 40%;
+    padding-right: 20px;
+}
+
+.titulo-evento h1 {
+    font-size: 3.5rem;
+    color: #5352ed; /* Cor roxa como na imagem */
+    margin: 0;
+}
+
+/* Container para a descrição e botão */
+.descricao-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.descricao-container h2 {
+    color: var(--primary); /* Título "DESCRIÇÃO" em azul */
+    margin: 0 0 15px 0;
+}
+
+.descricao-container p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Estilo do botão INSCREVA-SE */
+.inscricao-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: transparent;
+    color: var(--light);
+    border: 2px solid var(--primary);
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+    box-shadow: 0 0 10px var(--primary);
+    text-decoration: none;
+    align-self: center; /* Alinha o botão à esquerda dentro do flex container */
+    display: inline-block;
+}
+
+#btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: transparent;
+    color: var(--light);
+    border: 2px solid var(--primary);
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+    box-shadow: 0 0 10px var(--primary);
+    text-decoration: none;
+}
+
+#btn:before, .inscricao-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+
+#btn:hover:before, .inscricao-btn:hover:before {
+    left: 0;
+}
+
+#btn:hover, .inscricao-btn:hover {
+    color: var(--dark);
+    box-shadow: 0 0 20px var(--primary);
+    transform: translateY(-5px);
+}
+
+/* Demais estilos para as outras seções do site */
 #inicio {
-    margin-top: 10%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -42,7 +137,7 @@ a {
     display: flex;
     align-items: start;
     justify-content: end;
-    width: 70%;
+    width: 50%;
     z-index: 2;
 }
 
@@ -52,35 +147,16 @@ a {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    margin-left: 100%;
-    margin-top: -20%;
     gap: 12px;
+    margin-top: 20px;
 }
 
-#btn {
-    margin: 0 auto;
-    padding: 12px 24px;
-    background: transparent;
-    color: var(--light);
-    border: 2px solid var(--primary);
-    border-radius: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    z-index: 1;
-    box-shadow: 0 0 10px var(--primary);
-}
-
-#agenda{
+#agenda {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-top: -10%;
+    margin-top: 40px;
 }
 
 #agenda > h2, h3 {
@@ -96,10 +172,9 @@ a {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    
 }
 
-.agenda-palestra > h2{
+.agenda-palestra > h2 {
     text-align: center;
     color: var(--primary);
     text-transform: uppercase;
@@ -122,10 +197,9 @@ a {
 }
 
 /* Seção localização */
-
 #localizacao {
-    
-    width: 50%;
+    width: 80%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,34 +219,7 @@ a {
     font-size: 1.2rem;
 }
 
-
-
-#btn:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: var(--primary);
-    transition: all 0.4s ease-in-out;
-    z-index: -1;
-}
-
-#btn:hover:before {
-    left: 0;
-}
-
-#btn:hover {
-    color: var(--dark);
-    box-shadow: 0 0 20px var(--primary);
-    transform: translateY(-5px);
-}
-
-
-
 /* Footer */
-
 footer {
     background-color: var(--dark);
     color: var(--light);
@@ -181,4 +228,59 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Media Queries para responsividade */
+@media screen and (max-width: 768px) {
+    /* Em telas menores, os elementos ficam em coluna */
+    .titulo-evento, .descricao-container {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .titulo-evento {
+        margin-bottom: 20px;
+    }
+    
+    .inscricao-btn, #btn {
+        align-self: center;
+        margin: 20px auto 0;
+    }
+    
+    /* Outros ajustes de responsividade */
+    #home {
+        flex-direction: column;
+    }
+    
+    #inicio, #banner {
+        width: 100%;
+    }
+    
+    #banner {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    #localizacao {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .titulo-evento h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
+    #inicio .title {
+        font-size: 2.2rem;
+    }
+    
+    #inicio {
+        margin-top: 5%;
+    }
+    
+    .evento {
+        width: 95%;
+    }
 }

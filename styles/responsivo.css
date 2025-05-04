@@ -1,4 +1,85 @@
+/* Estilos Responsivos para Site de Eventos GDG Londrina
+ * Este arquivo contém todas as regras de responsividade para garantir
+ * que o site funcione corretamente em todos os tamanhos de tela
+ */
+
+/* ===== ESTILOS PARA TABLETS E DISPOSITIVOS MÉDIOS ===== */
+@media (max-width: 992px) {
+  /* ==== Ajustes Gerais ==== */
+  section {
+    padding: 20px 4%;
+  }
+  
+  /* ==== Ajustes do Header ==== */
+  .nav-container {
+    padding: 0 1rem;
+  }
+
+  /* ==== Seção Home ==== */
+  #inicio {
+    width: 90%;
+    margin: 100px auto 0;
+    text-align: center;
+  }
+  
+  #inicio .title {
+    font-size: 2.5rem;
+  }
+  
+  /* Reposicionar o contêiner de botões */
+  #btn-container {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #btn {
+    margin-top: 20px;
+  }
+  
+  /* ==== Seção Agenda ==== */
+  #agenda {
+    margin-top: 20px;
+  }
+  
+  .eventos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* ==== Seção Palestrantes ==== */
+  .palestrante img {
+    max-width: 250px;
+  }
+  
+  /* ==== Seção Localização ==== */
+  #localizacao {
+    width: 80%;
+  }
+  
+  .mapa iframe {
+    width: 100%;
+    max-width: 450px;
+    height: 350px;
+  }
+  
+  /* ==== Seção Formulário ==== */
+  .form-container {
+    width: 80%;
+  }
+}
+
+/* ===== ESTILOS PARA DISPOSITIVOS MÓVEIS ===== */
 @media (max-width: 768px) {
+  /* ==== Ajustes Gerais ==== */
+  section {
+    padding: 15px 3%;
+  }
+
+  /* ==== Menu Responsivo ==== */
   .nav-toggle {
     display: block;
   }
@@ -6,21 +87,11 @@
   .nav-menu ul {
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
   }
 
-  .nav-logo {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
-  .nav-logo img {
-    width: 50px;
-  }
-
-  .nav-logo span {
-    font-size: 1.2rem;
+  .nav-menu li {
+    margin: 10px 0;
   }
 
   .nav-menu {
@@ -28,11 +99,13 @@
     top: 70px;
     right: 0;
     width: 250px;
-    height: 50vh;
+    height: auto;
     background: linear-gradient(135deg, #5352ed 0%, #333 100%);
     transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 999;
+    padding: 20px 0;
+    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.2);
   }
 
   .nav-menu.active {
@@ -53,5 +126,250 @@
   .overlay.active {
     display: block;
   }
+
+  /* ==== Seção Home ==== */
+  #home {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    padding-top: 90px;
+  }
+
+  #inicio {
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  #inicio .title {
+    font-size: 2rem;
+  }
+
+  /* ==== Seção Agenda ==== */
+  #agenda {
+    margin-top: 30px;
+  }
+
+  .evento {
+    width: 100%;
+  }
+
+  /* ==== Seção Palestrantes ==== */
+  .palestrantes-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .palestrante {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .palestrante img {
+    max-width: 200px;
+  }
+
+  /* Ajustes para evitar sobreposição */
+  .slider-container {
+    overflow: visible;
+    flex-direction: column;
+  }
+
+  .slide-btn {
+    position: static;
+    margin: 10px auto;
+    transform: rotate(90deg);
+  }
+
+  .slide-btn.prev {
+    order: 1;
+  }
+
+  .slide-btn.next {
+    order: 3;
+  }
+
+  .palestrantes-container {
+    order: 2;
+  }
+
+  /* ==== Seção Localização ==== */
+  #localizacao {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .mapa {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mapa iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* ==== Seção Formulário ==== */
+  .form-container {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .form {
+    width: 100%;
+  }
 }
+
+/* ===== ESTILOS PARA DISPOSITIVOS MÓVEIS PEQUENOS ===== */
+@media (max-width: 480px) {
+  /* ==== Ajustes Gerais ==== */
+  section {
+    padding: 10px 2%;
+  }
+
+  /* ==== Menu Responsivo ==== */
+  .nav-menu {
+    width: 100%;
+  }
+
+  /* ==== Seção Home ==== */
+  #inicio .title {
+    font-size: 1.5rem;
+  }
+
+  #inicio .description {
+    font-size: 0.9rem;
+  }
+
+  #btn {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+
+  /* ==== Seção Palestrantes ==== */
+  .palestrante img {
+    max-width: 150px;
+  }
+
+  /* ==== Seção Localização ==== */
+  .mapa iframe {
+    height: 250px;
+  }
+
+  /* ==== Seção Formulário ==== */
+  .form-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"] {
+    padding: 8px;
+  }
+  
+  .form-container button {
+    padding: 10px;
+  }
+  
+  .titulo-inscricao h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ===== CORRIGINDO PROBLEMAS ESPECÍFICOS ===== */
+
+/* Correção para seção home - problema do btn-container */
+@media (max-width: 992px) {
+  #btn-container {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #btn-container div {
+    width: 100%;
+  }
+}
+
+/* Correção para seção palestrantes - problema de sobreposição */
+@media (max-width: 768px) {
+  .palestrantes {
+    overflow: hidden;
+  }
+  
+  .slider-container {
+    display: block;
+    position: relative;
+    padding: 0 10px;
+  }
+  
+  .palestrantes-container {
+    display: block;
+  }
+  
+  .palestrante {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .palestrante.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  .slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .slide-btn.prev {
+    left: 0;
+  }
+  
+  .slide-btn.next {
+    right: 0;
+  }
+}
+
+/* Correção para seção localização - problema do iframe */
+@media (max-width: 768px) {
+  #localizacao {
+    width: 95%;
+    margin: 30px auto;
+    padding: 15px;
+  }
+  
+  .mapa {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .mapa iframe {
+    width: 100% !important;
+    max-width: 100%;
+    height: 300px;
+  }
+}
+
+/* Correção para seção formulário - problema de largura */
+@media (max-width: 768px) {
+  .form-container {
+    width: 95%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 15px 20px;
+  }
+}
+
+/* Telas menores que 480px */
 
