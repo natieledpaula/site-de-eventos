@@ -9,7 +9,7 @@
   section {
     padding: 20px 4%;
   }
-  
+
   /* ==== Ajustes do Header ==== */
   .nav-container {
     padding: 0 1rem;
@@ -21,11 +21,11 @@
     margin: 100px auto 0;
     text-align: center;
   }
-  
+
   #inicio .title {
     font-size: 2.5rem;
   }
-  
+
   /* Reposicionar o contêiner de botões */
   #btn-container {
     width: 100%;
@@ -34,38 +34,38 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   #btn {
     margin-top: 20px;
   }
-  
+
   /* ==== Seção Agenda ==== */
   #agenda {
     margin-top: 20px;
   }
-  
+
   .eventos {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  
+
   /* ==== Seção Palestrantes ==== */
   .palestrante img {
     max-width: 250px;
   }
-  
+
   /* ==== Seção Localização ==== */
   #localizacao {
     width: 80%;
   }
-  
+
   .mapa iframe {
     width: 100%;
     max-width: 450px;
     height: 350px;
   }
-  
+
   /* ==== Seção Formulário ==== */
   .form-container {
     width: 80%;
@@ -198,14 +198,14 @@
     width: 100%;
     margin-top: 30px;
   }
-  
+
   .mapa {
     width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
   }
-  
+
   .mapa iframe {
     width: 100%;
     height: 300px;
@@ -216,12 +216,10 @@
     width: 100%;
     padding: 15px;
   }
-  
+
   .form {
     width: 100%;
   }
-
-
 }
 
 /* ===== ESTILOS PARA DISPOSITIVOS MÓVEIS PEQUENOS ===== */
@@ -230,8 +228,6 @@
   section {
     padding: 10px 2%;
   }
-
-
 
   /* ==== Menu Responsivo ==== */
   .nav-menu {
@@ -264,20 +260,21 @@
 
   /* ==== Seção Formulário ==== */
   .form-container {
+    width: 60dvh;
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  
+
   .form-group input[type="text"],
   .form-group input[type="email"],
   .form-group input[type="tel"] {
     padding: 8px;
   }
-  
+
   .form-container button {
     padding: 10px;
   }
-  
+
   .titulo-inscricao h1 {
     font-size: 1.5rem;
   }
@@ -296,7 +293,7 @@
     margin-top: 20px;
     text-align: center;
   }
-  
+
   #btn-container div {
     width: 100%;
   }
@@ -307,39 +304,39 @@
   .palestrantes {
     overflow: hidden;
   }
-  
+
   .slider-container {
     display: block;
     position: relative;
     padding: 0 10px;
   }
-  
+
   .palestrantes-container {
     display: block;
   }
-  
+
   .palestrante {
     display: none;
     opacity: 0;
     transition: opacity 0.5s ease;
   }
-  
+
   .palestrante.active {
     display: block;
     opacity: 1;
   }
-  
+
   .slide-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
   }
-  
+
   .slide-btn.prev {
     left: 0;
   }
-  
+
   .slide-btn.next {
     right: 0;
   }
@@ -352,12 +349,12 @@
     margin: 30px auto;
     padding: 15px;
   }
-  
+
   .mapa {
     width: 100%;
     overflow: hidden;
   }
-  
+
   .mapa iframe {
     width: 100% !important;
     max-width: 100%;
@@ -376,4 +373,21 @@
 }
 
 /* Telas menores que 480px */
+@media (max-width: 480px) {
+  .form-container {
+    width: 95%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 15px;
+  }
+}
 
+/* Telas menores que 320px */
+@media (max-width: 320px) {   
+  .form-container {
+    width: 95%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 15px 20px;
+  }
+}
