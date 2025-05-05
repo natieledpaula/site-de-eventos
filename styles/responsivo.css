@@ -380,6 +380,10 @@
     margin: 30px auto;
     padding: 15px;
   }
+
+  .form {
+    width: 60dvw;
+  }
 }
 
 /* Telas menores que 320px */
