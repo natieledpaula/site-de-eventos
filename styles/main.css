@@ -10,6 +10,11 @@ a {
     text-decoration: none;
 }
 
+section {
+    margin-top: 12%;
+   
+}
+
 /* Estilos para a seção principal (header com título e descrição) */
 #home {
     display: flex;
@@ -273,6 +278,82 @@ footer {
         width: 90%;
     }
 }
+
+#eventos-anteriores {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+#eventos-anteriores > h2 {
+    text-align: center;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+.evento-anterior {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    border: 1px solid var(--primary);
+    border-radius: 12px;
+    margin: auto;
+    margin-bottom: 3%;
+    padding: 12px;
+    box-shadow: 0 0 10px var(--primary);
+}
+
+
+/* Deixando redes sociais em Coluna */
+#redes-sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+#redes-sociais > h2 {
+    text-align: center;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+#redes-sociais ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#redes-sociais li {
+    margin: 10px 0;
+}
+
+#redes-sociais a {
+    font-size: 3rem;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+
+#redes-sociais a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
 
 @media screen and (max-width: 576px) {
     .titulo-evento h1 {
