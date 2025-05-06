@@ -73,7 +73,7 @@ Na seção final do site, o usuário pode se inscrever preenchendo:
 ## 🧑‍💻 Desenvolvedor
 
 **Gabriel Gandolfi** – Estudante e desenvolvedor front-end  
-** Natiele de Paula** - Estudante e desenvolvedor front-end  
+**Natiele de Paula** - Estudante e desenvolvedor front-end  
 **Tecnologias favoritas**: HTML, CSS, JavaScript  
 
 ---
